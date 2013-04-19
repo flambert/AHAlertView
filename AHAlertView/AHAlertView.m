@@ -140,7 +140,9 @@ typedef void (^AHAnimationBlock)();
 
 	// Set basic button background images.
 	[[self appearance] setButtonBackgroundImage:[self normalButtonBackgroundImage] forState:UIControlStateNormal];
-	
+
+    [[self appearance] setDestructiveButtonBackgroundImage:[self normalButtonBackgroundImage] forState:UIControlStateNormal];
+
 	[[self appearance] setCancelButtonBackgroundImage:[self cancelButtonBackgroundImage] forState:UIControlStateNormal];
 }
 
